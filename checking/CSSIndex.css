@@ -1,0 +1,175 @@
+/* Pseudo Classes */
+a:hover{
+    background-color: black;
+    color:white;
+}
+a:visited{
+    color:green;
+}
+
+/* Relational Selectors */
+/* Immediate Sibling */
+/* div > p { 
+    background-color: lightblue;
+    color: green;
+} */
+div{
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    border:2px dashed lightblue;
+    border-radius: 20px 20px 20px 20px;
+}
+
+/* Adjacent Sibling */
+div+p {
+color:blue;
+font-weight: bold;
+}
+
+/* General Sibling */
+div~p {
+text-transform: uppercase;
+}
+
+/* Attributes Selector */
+
+input[type="text"]:enabled {
+    background-color: lightblue;
+    color:black;
+}
+
+input[type="text"]:required {
+    background-color: darkcyan;
+    color:white;
+}
+
+input[type="password"]:required {
+    background-color:darkcyan;
+    color:white;
+}
+
+::placeholder{
+    color:white
+}
+
+a[target]{
+    text-decoration:none;
+   
+}
+
+a[target="_blank"]{
+    text-decoration: none;
+    color:green;
+}
+
+/* * means if contains
+$ means ends with 
+^ means starts with */
+
+section[class*="para"]::first-letter{
+    font-size: larger;
+    color:purple
+}
+
+p[style*="font-weight"][name*="Intro"]{
+    color:green;
+}
+
+#parent
+{
+	background-color:#2196f3;
+	border: 1px solid white;
+	height:400px;
+	width:400px;
+}
+#child1
+{
+	background-color:grey;
+	border: 1px solid white;
+	height:180px;
+	margin-left:10px;
+	margin-top:10px;
+	width:380px;
+    opacity:0.5;
+	color:white;
+}
+
+#child2
+{
+	background-color: rgba(128, 128,128,0.5);
+	border: 1px solid white;
+	height:180px;
+	margin-left:10px;
+	margin-top:10px;
+	width:380px;
+	color:white;
+}
+
+
+#hsluse{
+    background-color: hsla(25, 70%,70%,0.5);
+}
+
+#fontCheck{
+    font-family: navBrandFont;
+    font-style: normal;
+    font-variant: normal; 
+    text-transform:none;
+    font-weight: 500;
+    font-size: small;
+    line-height: 1.0cm;
+    
+}
+
+@font-face {
+    font-family: navBrandFont;
+    src: url(blackjack.otf);
+  }
+
+.navlinks ul li {
+    color: red;
+    
+}
+
+
+#textCheck{
+    text-align: left;
+    text-decoration: underline;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-indent: 10px;
+    text-shadow: 1px 2px 3px rgba(100, 0, 10,1),  -1px -2px 3px rgba(10, 0, 100,1); 
+    border: 4px solid lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:5px 5px 10px 1px rgba(30,50,40,0.5);
+};
+/*blur value is used to give glow */
+
+/* Box Model */
+
+#orgImg
+{
+   border:1px solid black;
+}
+#translate{
+   
+   border:1px solid purple;
+   transform:translate(45px,70px);
+}
+#scale{
+   border:1px solid black;
+   transform:scale(2,2);
+}
+#rotate {
+    border:1px solid black;
+    transform:rotate(90deg);
+}
+
+#justHover:hover{
+    background-color: aquamarine;
+    
+    transform: rotate(90deg);
+}

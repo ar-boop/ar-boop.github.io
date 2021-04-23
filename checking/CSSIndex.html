@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <title>CSSIndex</title>
+    <link rel="stylesheet" type="text/css" href="CSSIndex.css">
+</head>
+<body>
+    <h2>Inline elements</h2> 
+            <p style="font-size: 20px;">This is with inline font-size.
+                <span style="font-size: 80%;">(using span withtin the line.)</span> 
+            </p> 
+    <h2>Pseudo Classes - Special State of an Element</h2>
+        <p name="Intro">This is an Intro Para for Ps C</p>
+        <a href="Home.html">Home</a> <br>
+        <a href="Login.html">Login</a> <br>
+        <a href="Register.html">Register</a> <br>
+        <a href="About.html">About</a> <br>
+    
+    <h2>CSS Relational Selectors</h2>
+        <p name="Intro" style="font-weight: bold;">This is an Intro Para for Re C</p>
+        <div>
+            <p>
+                Paragraph1, immediate inside the Div element.
+            </p>
+        </div>
+        <p>
+            Paragraph2, An adjacent Sibling of the Div element.
+        </p>
+        <p>
+            Paragraph3, Another Sibling inside the Div element. 
+        </p>
+    
+    <h2> CSS Attributes Selector</h2>
+        <p name="Intro">This is an Intro Para for At S</p>
+        <form>
+            <p>Login Form</p>
+            <table>
+                <tr>
+                    <td>Username: </td>
+                    <td><input type="text" required placeholder="Required input"/></td>
+                </tr>
+                <tr>
+                    <td>Nickname: </td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td> <input type="password" required placeholder="Required input"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Login">	</td>
+                </tr>
+            </table>
+        </form> 
+        <p>using a[target]</p>
+            <ul>
+                <li><a href="#">just target</a></li>
+                <li><a href="#" target="_blank">with a[target="_blank"]</a></li>
+                <li><a href="#" target="_self">Contact us</a></li>
+            </ul>
+        <section class="para_section">
+            <p>This is a section with class name "para_section"</p>
+        </section>
+        <section class="para">
+            <p>This is a section with class name "para"</p>
+        </section>
+        <section class="last_para" >
+            <p>This is a section with class name "last_para"</p>
+        </section>
+    <h2>Color Models</h2>
+        <div id="parent">
+            <p id= "child1">
+                This has been given the opacity separately. <br>
+                fonts are also given the opacity of 0.5 here.
+            </p>
+            <p id="child2">
+                here fonts are not given the opacity.
+            </p>
+            <p id="hsluse">HSL can also be used.</p> 
+        </div> <br>
+    <h2>Font & Text Properties</h2>
+        <p id="fontCheck">
+            This statement is a font check. How does it look to you ?. <br>
+            Does this look okay ? 
+        </p>
+        <p id="textCheck">
+            This is a test of Text-properties. <br>
+            Id aeterno laoreet postulant nam, ea dicit iisque voluptua nec,
+            ferri suavitate ad eam. Ut reque contentiones usu.
+            Ex sea aperiri maluisset, viderer definitionem in mea.
+            Cu mea alii noluisse, eam et soluta consectetuer.
+            Mei id nemore consetetur honestatis, ut vix atqui cetero, 
+            id sed verterem postulant.
+        </p>
+        <div class="navlinks">
+            <ul>
+                <li>Check</li>
+                <a href="./home.html" ><li>Home</li></a>
+                <a href="./Entertainment.html"><li>Entertainment</li></a>
+                <a href="./priceplan.html"><li>Price Plans</li></a>
+                <li><button type="button" class="btn"><a href="./form.html">Sign Up</a></button></li>
+            </ul>
+            
+        </div> <br>
+    <h2> Box Model</h2>
+    <div>
+        <p>This text is the content of the box</p>
+        <p>This text is the content of the box</p>
+        <p>This text is the content of the box</p>
+    </div>
+    <h2>Transformations</h2>
+    <div>
+        <img id ="orgImg" src="activity.svg" alt="Not available">
+        <img id="translate" src="activity.svg" alt="Not available">
+        <img id="scale" src="activity.svg" alt="Not available"> <br>
+        <img id="rotate" src="activity.svg" alt="Not available"> <br>
+        <br><br>
+
+        This image will rotate when hovered.
+        <img id ="justHover" src="activity.svg" alt="Not available">
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+	background-color: rgb(255, 238, 236);
+}
+#h1 {
+	color: lightcoral;
+	font-family: Helvetica;
+	margin-left: 34%;
+	margin-right: auto;
+	width: 80%;
+}
+
+#an {
+	color: antiquewhite;
+	font-family: Helvetica;
+	margin-left: 38%;
+	margin-right: auto;
+	width: 80%;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	height: 400px;
+}

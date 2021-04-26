@@ -7,9 +7,57 @@
 		<title>Get your iceCream page!</title>
 		<script src="./iceCream.js" defer></script>
 		<link rel="stylesheet" href="./iceCream.css" />
+		<style>
+			body {
+				background-color: rgb(255, 238, 236);
+			}
+			#h1 {
+				color: lightcoral;
+				font-family: Helvetica;
+				margin-left: 34%;
+				margin-right: auto;
+				width: 80%;
+			}
+
+			#an {
+				color: antiquewhite;
+				font-family: Helvetica;
+				margin-left: 38%;
+				margin-right: auto;
+				width: 80%;
+			}
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: auto;
+				height: 400px;
+			}
+		</style>
 	</head>
 	<body>
 		<h1 id="h1">Here!! have an iceCream!!! 😋</h1>
 		<img src="./ic1.png" onclick="changeIce();" id="i1" alt="😥" />
+		<script>
+			let changeIce = () => {
+				let n = Math.floor(Math.random() * 3) + 1;
+				let r = Math.floor(Math.random() * 100) + 1;
+				let g = Math.floor(Math.random() * 100) + 1;
+				let b = Math.floor(Math.random() * 100) + 1;
+
+				let src = './ic' + n + '.png';
+				document.getElementById('i1').src = src;
+				console.log(src);
+				document.getElementById('h1').innerHTML =
+					'Here!! have another iceCream!!! 😋';
+				document.createElement('h1');
+				let newOne = document.createElement('h1'); // Create a <button> element
+				newOne.innerHTML = 'I want another one!!! 😁'; // Insert text
+				newOne.setAttribute('id', 'an');
+				document.body.appendChild(newOne);
+				document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+			};
+		</script>
 	</body>
 </html>

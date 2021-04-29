@@ -1,5 +1,5 @@
 function setup() {
-	createCanvas(450, 800);
+	createCanvas(0.45 * windowHeight, 0.8 * windowHeight);
 	btn = createButton('Download');
 	btn.mouseClicked(keyPressed);
 }

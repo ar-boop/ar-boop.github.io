@@ -5,7 +5,8 @@ var x = 100;
 var y = 100;
 
 function setup() {
-	canvas = createCanvas(0.45 * windowHeight, 0.8 * windowHeight);
+	let canvas = createCanvas(0.45 * windowHeight, 0.8 * windowHeight);
+	canvas.parent('container');
 	btn = createButton('Download');
 	btn.mouseClicked(dPressed);
 }

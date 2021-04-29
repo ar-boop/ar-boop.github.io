@@ -10,6 +10,7 @@ function draw() {
 
 function keyPressed() {
 	noCanvas();
+	console.log('inside');
 	resizeCanvas(900, 1600);
 	save('download.png');
 }

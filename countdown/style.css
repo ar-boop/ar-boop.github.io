@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.coming-soon {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+* {
+	color: white;
+	background-color: black;
+}
+
+.countdown {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.days,
+.hours,
+.mins,
+.secs {
+	font-size: 2rem;
+}
+
+.waiting {
+	height: 50vh;
+}
